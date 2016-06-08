@@ -9,10 +9,12 @@
   for further details.
   
   To react appropriately on an input string, we need to decompose the input string.
-    
+  
+## Instructions
+
 1. Work through the worksheets
     - [if](../../src/main/worksheets/03_01_if.sc)
     - [strings](../../src/main/worksheets/03_02_strings.sc)
-2. Enhance your Bot:
-   - In case of a 'React' as input state let your Bot move 1 UP and update the status with your energy, e.g.: 'Status(text="50")'
-   - If there is no 'React'-input, but anything else: do nothing.
+2. Enhance your Bot
+    - In case of a 'React' as input state let your Bot move 1 UP and update the status with your energy, e.g.: 'Status(text="50")'
+    - If there is no 'React'-input, but anything else: do nothing.
