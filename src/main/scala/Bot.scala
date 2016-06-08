@@ -1,7 +1,7 @@
 // Tutorial Bot #1: Hello World
 
 class ControlFunction {
-    def respond(input: String) = "Status(text=Hello)"
+    def respond(input: String): String = "Status(text=Hello)"
 }
 
 class ControlFunctionFactory {
