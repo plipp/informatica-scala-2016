@@ -17,13 +17,7 @@ This workshop introduces in the basics of Scala: We will learn interactively abo
 
 ... and we will apply our new knowledge to send out bots in [Scalatron](https://scalatron.github.io/).
 
-II. Scalatron
---------------
-- [Scalatron Game Rules](https://github.com/plipp/scalatron/blob/master/Scalatron/doc/markdown/Scalatron%20Game%20Rules.md)
-- [Scalatron Game Protocol](https://github.com/plipp/scalatron/blob/master/Scalatron/doc/markdown/Scalatron%20Protocol.md)
-
-
-III. Front-Up Preparations
+II. Front-Up Preparations
 -------------------------
 
 As this is a notebook class, you should try to set up your machine before we start with the actual workshop.
@@ -62,16 +56,34 @@ TODO: Install Virtualbox + image
 ### Further Links about IntelliJ for Scala
 
 - https://www.jetbrains.com/help/idea/2016.1/scala.html
-- For Courserians only: https://class.coursera.org/reactive-002/wiki/IntelliJ_IDEA
+
+III. This workshop
+------------------
+We walk through the basics of Scala by
+
+- [Scalatron-Bot-](./src/main/scala/Bot.scala) and 
+- [Worksheet](./src/main/worksheets/01_01_variables.sc) examples.
+
+The guided tour can be found in the documentation directory [tutorial](./docs/tutorial/01-GettingStarted.md)
 
 
 
-IV. Scala - Help for Self-Help
+IV. Help for Self-Help
 ------------------------------
-- [Scala Glossary Typesafe](http://docs.scala-lang.org/glossary/?_ga=1.237881024.1946458768.1438599324)
+
+### Scalatron
+
+- [Scalatron Game Rules](https://github.com/plipp/scalatron/blob/master/Scalatron/doc/markdown/Scalatron%20Game%20Rules.md)
+- [Scalatron Game Protocol](https://github.com/plipp/scalatron/blob/master/Scalatron/doc/markdown/Scalatron%20Protocol.md)
+
+### Scala
+
+- [Scala CheatSheet by Scalatron](TODO)
 
 - [Scala CheatSheet Typesafe with GOOD-BAD](http://docs.scala-lang.org/cheatsheets/?_ga=1.39644259.1946458768.1438599324)
 - [Scala CheatSheet Coursera](https://github.com/lampepfl/progfun-wiki/blob/gh-pages/CheatSheet.md)
+
+- [Scala Glossary Typesafe](http://docs.scala-lang.org/glossary/?_ga=1.237881024.1946458768.1438599324)
 
 - [Scala-Api-Documentation](http://www.scala-lang.org/api/current/#package)
 
@@ -80,8 +92,8 @@ IV. Scala - Help for Self-Help
 - IntelliJ-Worksheets
 
 
-V. What's Next
----------------
+V. Next Steps in Scala
+----------------------
 
 ### Resources
 - [Lightbend (former Typesafe): eBooks, Webinars, Videos ...](https://www.lightbend.com/)
@@ -101,11 +113,3 @@ V. What's Next
 ### Playground
 - [Scala Koans](http://scala-exercises.47deg.com/)
 - [S-99: Ninety-Nine Scala Problems](http://aperiodic.net/phil/scala/s-99/)
-
-
-X. TODO
-------------------
-- Do we need info about
-    - markdown --> link
-    - git --> Tutoriallink
-    - what else???
