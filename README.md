@@ -119,7 +119,7 @@ X. TODO
 ------------------
 - Minimize dev-Gameboard
 
-- Rename 'ControlFunction' to 'Bot'
+- Rename 'ControlFunction' to 'Bot' ??? No - because of all the documentation...
 
 - Do we need info about
     - markdown --> link
