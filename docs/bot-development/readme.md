@@ -37,11 +37,11 @@ A gameboard should appear. Play with the Keyboard commands ...
 
     $ cd $SCD_HOME
     $ sbt
-    > ~ deploy  //sbt listens for code changes and automatically deploys them   
+    > ~deploy  //sbt listens for code changes and automatically deploys them   
 ```
 
 Open `$SCD_HOME/src/main/scala/Bot.scala` and change the response of the `ControlFunction` to "Hello World".
-Check on the gameboard, that the response text in fact changed.
+Check on the gameboard, that the response text in fact changed. If not, press 'r' on the game board and check again.
 
 # References
 
