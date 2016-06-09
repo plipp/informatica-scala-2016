@@ -35,15 +35,13 @@ val equalsOp = 234.toString=="234"
 val refEqualsOp = 234.toString eq "234"
 
 // ------------------ Exercise
-val randomValue = math.abs(Random.nextInt())
-val input1 = s"Goodbye(energy=$randomValue)"
-val input2 = "React(generation=0,time=0,view=__W_W_W__,energy=100)"
-
-// respond should be
-// - empty string "" if the input state 'React'
-// - (energy-2) as string if the input state is 'Goodbye'
-// - else "?"
+// respond should return
+// - "Status(text=onReact)" if the input state 'React'
+// - "Status(text=onGoodbye)" if the input state is 'Goodbye'
+// - else "Status(text=?)"
 // try to solve with: 'split' and toXXX
 def respond(input:String) = "?"
 
-respond("nothing")
+respond("nothing") // expected: Status(text=?)
+respond("React(...") // expected: Status(text=onReact)
+respond("Goodbye(energy=99)") // expected: Status(text=onGoodbye)
