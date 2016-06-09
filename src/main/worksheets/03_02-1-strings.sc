@@ -40,7 +40,7 @@ val refEqualsOp = 234.toString eq "234"
 // - "Status(text=onGoodbye)" if the input state is 'Goodbye'
 // - else "Status(text=?)"
 // try to solve with: 'split' and toXXX
-def respond(input:String) = "?"
+def respond(input:String) = "Status(text=XXX)"
 
 respond("nothing") // expected: Status(text=?)
 respond("React(...") // expected: Status(text=onReact)
