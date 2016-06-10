@@ -26,8 +26,21 @@ params.foreach(aLambdaExpression)
 params.foreach(s => print (s"|$s|"))
 
 // ----------------- EXERCISE 04 - 2
-var keyValueTuples: Array[(String,String)] = Array.ofDim(params.length)
-
+val keyValueTuples: Array[(String,String)] = Array.ofDim(params.length)
+var i = 0
 // - collect the kv-array-elements in a foreach-expression
 // - when finished: decomment the following line and check your result
 // val paramMap: Map[String, String] = keyValueTuples.toMap
+params.foreach(param => {
+  val kvArray: Array[String] = param.split('=')
+  keyValueTuples.update(i, (kvArray(0), kvArray(1)))
+  i += 1
+})
+keyValueTuples.toMap
+
+var keyValueTuples2: Array[(String, String)] = Array.empty
+params.foreach(param => {
+  val kvArray: Array[String] = param.split('=')
+  keyValueTuples2 = keyValueTuples2 :+ (kvArray(0), kvArray(1))
+})
+keyValueTuples2.toMap

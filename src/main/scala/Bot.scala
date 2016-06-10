@@ -6,10 +6,11 @@ class ControlFunction {
     def respond(input: String) = {
         val tokens: Array[String] = input.split('(')
         if (tokens(0)=="React") /* e.g. React(generation=0,time=0,view=__W_W_W__,energy=100) */ {
-            val params: Array[String] = tokens(1).dropRight(1).split(',') // TODO
-            val energy: String = params(3).split('=')(1)
+            val params: Array[String] = tokens(1).dropRight(1).split(',')
+            val paramMap: Map[String, String] = params.map(param => param.split('=')).map(kv=>(kv(0),kv(1))).toMap
+            val energy = paramMap("energy")
             s"Move(direction=0:-1)|Status(text=$energy)"
-        } else ""
+        } else "Status(text=kkkk)"
     }
 }
 
