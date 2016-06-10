@@ -8,7 +8,7 @@ class ControlFunction() {
 val controlFunction = new ControlFunction()
 controlFunction.respond("input")
 
-// EXERCISE 03
+// EXERCISE 02
 // a) Change the respond method so that it returns
 //    Hello Scala1
 //    Hello Scala2

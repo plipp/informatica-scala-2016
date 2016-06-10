@@ -14,7 +14,7 @@ s.dropRight(1)
 // What happens here? TODO
 //sEmpty.dropRight(1)
 
-// -------- Exercises
+// -------- EXERCISES
 
 // 1. Check http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.StringOps
 //    Find for a) and b) each 2 solutions with 'take', 'takeRight', 'drop' and/or 'dropRight'

@@ -1,5 +1,3 @@
-import scala.util.Random
-
 // ----------------- convert vice-versa
 val anInt = 24345
 
@@ -34,7 +32,7 @@ tokens
 val equalsOp = 234.toString=="234"
 val refEqualsOp = 234.toString eq "234"
 
-// ------------------ Exercise
+// ------------------ EXERCISE 03 - 2
 // respond should return
 // - "Status(text=onReact)" if the input state 'React'
 // - "Status(text=onGoodbye)" if the input state is 'Goodbye'

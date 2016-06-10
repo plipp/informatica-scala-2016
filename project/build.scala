@@ -23,7 +23,8 @@ object Build extends Build {
 
         libraryDependencies ++= Seq(
             "org.specs2" %% "specs2" % "2.4.17" % "test",
-            "org.pegdown" % "pegdown" % "1.6.0" %"test",
+            "org.pegdown" % "pegdown" % "1.6.0" % "test",
+            "org.scalatest" %% "scalatest" % "2.2.5" % "test",
             "junit" % "junit" % "4.12" % "test"),
 
         testOptions := Seq(

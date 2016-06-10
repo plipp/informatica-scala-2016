@@ -22,7 +22,7 @@ def respondDoNotForgetEquals(input: String) {
 }
 // TODO respondDoNotForgetEquals("World")
 
-// EXERCISE 02
+// EXERCISE 01 - 2
 // Change the respond method, so that
 //      respond("World")
 // returns "Status(text=Hello World)"

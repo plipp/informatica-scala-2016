@@ -11,6 +11,8 @@ s2 += "value"
 s2
 
 val s3 = s"Starter $s1" // Scala String Substitution
-// EXERCISE 01
+
+
+// EXERCISE 01 - 1
 // Make the following codeline running
 // s3 = "new"
