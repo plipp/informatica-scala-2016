@@ -5,7 +5,7 @@ val params: Array[String] = react.split('(')(1).dropRight(1).split(',')
 // iterate over the params and get (key,value)-tuples - the imperative way
 
 // a) for-loop: with side-effect => an anti-pattern in scala
-var keyValueTuples1: Array[(String,String)] = Array.ofDim(params.length)
+val keyValueTuples1: Array[(String,String)] = Array.ofDim(params.length)
 for (i<-0 until params.length) {
   val kv: Array[String] = params(i).split('=')
   keyValueTuples1.update(i,(kv(0),kv(1))) // Note: Arrays can be updated ==> mutable!
@@ -26,8 +26,17 @@ params.foreach(aLambdaExpression)
 params.foreach(s => print (s"|$s|"))
 
 // ----------------- EXERCISE 04 - 2
-var keyValueTuples: Array[(String,String)] = Array.ofDim(params.length)
-
-// - collect the kv-array-elements in a foreach-expression
+val keyValueTuples: Array[(String,String)] = Array.ofDim(params.length)
+var i = 0
+// - collect the kv-array-elements in a foreach-expression,
+//   using i as counter + update-function of Array
 // - when finished: decomment the following line and check your result
 // val paramMap: Map[String, String] = keyValueTuples.toMap
+
+// Bonus-Exercise
+var keyValueTuples2: Array[(String, String)] = Array.empty
+// - collect the kv-array-elements in a foreach-expression,
+//   using  :+ (==copy and append) function of Array
+//   (see http://www.scala-lang.org/api/current/#scala.Array for further help)
+// - when finished: decomment the following line and check your result
+// val paramMap2: Map[String, String] = keyValueTuples2.toMap

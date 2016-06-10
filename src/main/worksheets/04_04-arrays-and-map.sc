@@ -10,7 +10,7 @@ val keyValueTuples1: Array[(String, String)] = keyValueArrays1.map(a => (a(0), a
 val paramMap1: Map[String, String] = keyValueTuples1.toMap
 
 // ... all in one with placeholder
-val paramMap1b = params.map(_.split('=')).map(a => (a(0), a(1))).toMap
+val paramMap1b = params.map(_.split('=')).map(a => (a(0), a(1))) toMap
 
 // b) flatMap: without side-effect => a scala way
 val keyValueArrays2 = params.flatMap (param => Array(param.split('=')))

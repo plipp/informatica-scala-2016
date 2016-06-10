@@ -28,8 +28,7 @@ A convenient way for the realization would be to store the parameters in a Dicti
     - [tuples](../../src/main/worksheets/04_02-tuples.sc)
     - [arrays and loops](../../src/main/worksheets/04_03-arrays-and-loops.sc)
     - [arrays and map/flatMap](../../src/main/worksheets/04_04-arrays-and-map.sc)
-   and the ScalaTest
-    - [array test](../../src/test/scala/concepts/ArrayTest.scala)
+
 2. Improve your Bot code:
-    - Change your intitial implementation of [the ControlFunction#respond-method](../../src/main/scala/Bot.scala) (see also [Instructions](./03-Understand-ControlFunction-Input.md)),
+    - Change your initial implementation of [the ControlFunction#respond-method](../../src/main/scala/Bot.scala) (see also [Instructions](./03-Understand-ControlFunction-Input.md)),
       so that it puts all parameters in a dictionary/map and fetches their values from there
