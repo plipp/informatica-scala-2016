@@ -28,26 +28,41 @@ There are 2 options to do so:
 * Option2: Install Virtualbox on your computer, download an already prepared Ubuntu-Box and run it
 
 *Attention*:
-The IDE must be IntelliJ (not e.g. ScalaIDE, Eclipse...), because the orksheets only run under IntelliJ!
+The IDE must be IntelliJ (not e.g. ScalaIDE, Eclipse...), because the worksheets only run under IntelliJ!
 
 Here a description, how both options work, in more detail:
 
 ### Option 1 - the hard way
-0. [Scala Workshop Sources and Documentation](https://TODO*): check it out: `git clone git@github.com:plipp/informatica-scala-2016.git`
+0. Install
+    - [Java 8 (JDK!)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+    - [Scala Simple Build Tool (SBT)](http://www.scala-sbt.org/download.html)
+ 
+1. [Scala Workshop Sources and Documentation](https://github.com/plipp/informatica-scala-2016):<br>
+    check it out: `git clone git@github.com:plipp/informatica-scala-2016.git`
+    or          : `git clone https://github.com/plipp/informatica-scala-2016.git`
 
-1. [IntelliJ IDEA 2016.1 Help /Installing and Launching](https://www.jetbrains.com/help/idea/2016.1/installing-and-launching.html?search=install#d1790162e138)
-   Please also install the Scala Plugin
+2. [IntelliJ IDEA 2016.1 Help /Installing and Launching](https://www.jetbrains.com/help/idea/2016.1/installing-and-launching.html?search=install#d1790162e138)
+   Please also install the featured Scala Plugin
 
-2. If you already have installed IntelliJ, but not the Scala Plugin: 
+3. If you already have installed IntelliJ, but not the Scala Plugin: 
    [Install it now!](http://stackoverflow.com/questions/26767463/intellij-14-create-import-a-scala-sbt-project)
    (This also should work for IntelliJ-2016)
    
-3. Import the scala workshop project into IntelliJ: `informatica-scala-2016/build.sbt`
+4. Import the scala workshop project into IntelliJ: `informatica-scala-2016/build.sbt`
    ... can take some time as it downloads the whole internet ...
 
-4. Expected Result: Worksheets (*.sc) and tests can directly be run in IntelliJ
+5. Expected Result: Worksheets (*.sc) and tests can directly be run in IntelliJ
 
-5. TODO Getting Started with Scalatron ...
+6. TODO Getting Started with Scalatron ...
+
+#### Troubleshooting
+
+1. If IntelliJ is too slow<br>
+    - play with IntelliJ-vm-memory-allocation-configuration in `$IDEA_HOME/bin/idea64.vmoptions`, e.g. <br>
+    ```
+    -Xms512m
+    -Xmx1750m
+    ```
 
 ### Option 2 - the easy(ier) way
 
