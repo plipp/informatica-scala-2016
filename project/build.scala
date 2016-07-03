@@ -6,11 +6,6 @@ object Build extends Build {
     val startServer = TaskKey[Unit]("startServer")
     val deploy = TaskKey[Unit]("deploy")
 
-    val bot = Project(
-        id = "mybot",
-        base = file("."),
-        settings = Project.defaultSettings ++ botSettings)
-
     val botSettings = Seq[Setting[_]](
         organization := "de.informatica",
         name := "scalatron-bot",
@@ -22,19 +17,8 @@ object Build extends Build {
         javaOptions += "-Xmx1g", //
 
         libraryDependencies ++= Seq(
-            "org.specs2" %% "specs2" % "2.4.17" % "test",
-            "org.pegdown" % "pegdown" % "1.6.0" %"test",
+            "org.scalatest" %% "scalatest" % "2.2.5" % "test",
             "junit" % "junit" % "4.12" % "test"),
-
-        testOptions := Seq(
-            Tests.Filter(_ == "de.informatica.scalatron.BotSpec"),
-            Tests.Argument("html", "console")),
-
-        testOptions <+= crossTarget map { ct =>
-            Tests.Setup { () =>
-                System.setProperty("specs2.outDir", new File(ct, "specs2").getAbsolutePath)
-            }
-        },
 
         botDirectory := file("bots"),
 
@@ -46,4 +30,9 @@ object Build extends Build {
         }
 
     )
+
+    val bot = Project(
+        id = "mybot",
+        base = file("."),
+        settings = Project.defaultSettings ++ botSettings)
 }
