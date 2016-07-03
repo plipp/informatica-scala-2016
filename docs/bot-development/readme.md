@@ -4,9 +4,17 @@
 
 Installed Scala Build Tool [sbt](http://www.scala-sbt.org/)
 
-## Start the Scalatron Server
+## Initialization of the Environment
 
 With `SCD_HOME` as root directory of this project: 
+
+```bash
+
+    $ cd $SCD_HOME
+    $ sbt deploy
+```    
+
+## Start the Scalatron Server
 
 ```bash
 
