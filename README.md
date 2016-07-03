@@ -63,14 +63,28 @@ Here a description, how both options work, in more detail:
 
 1. If IntelliJ is too slow<br>
     - play with IntelliJ-vm-memory-allocation-configuration in `$IDEA_HOME/bin/idea64.vmoptions`, e.g. <br>
+    
     ```
-    -Xms512m
-    -Xmx1750m
+        -Xms512m
+        -Xmx1750m
     ```
 
 ### Option 2 - the easy(ier) way
 
-TODO: Install Virtualbox + image
+1. Install Virtualbox
+
+2. Import the Virtualbox Appliance for the Informatica-Scala-Workshop [XUbuntu](TODO) via 'File->Import Appliance' 
+
+3. Start the `XUbuntu` VM (informatica/informatica)
+    - Start IntelliJ
+    - (git) pull fresh Workshop Sources in IntelliJ or from terminal (IntelliJ has one as well!:<br>
+       `cd /home/informatica/informatica/scala-workshop/informatica-scala-2016 && git pull`
+       
+4. Check, whether all works fine:
+    - open the worksheet `./src/main/worksheets/01_01_variables.sc` in IntelliJ
+    - click the green button (Run) in the worksheet editor ... takes a while as IntelliJ first compiles ...
+    <br>...<br>
+    In case of success you should see the output of the scala code in the right pane of the worksheet editor.    
 
 ### Further Links about IntelliJ for Scala
 

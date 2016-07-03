@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#!/bin/bash
 # Starts the Scalatron Server in debug mode, you can remote debug at port 5005.
 #
 # Bot-Jars are expected in $SCALATRON_DEV_HOME/bots
