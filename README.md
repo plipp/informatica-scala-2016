@@ -37,23 +37,27 @@ Here a description, how both options work, in more detail:
     - [Java 8 (JDK!)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
     - [Scala Simple Build Tool (SBT)](http://www.scala-sbt.org/download.html)
  
-1. [Scala Workshop Sources and Documentation](https://github.com/plipp/informatica-scala-2016):<br>
-    check it out: `git clone git@github.com:plipp/informatica-scala-2016.git`
-    or          : `git clone https://github.com/plipp/informatica-scala-2016.git`
+1. Check out the [Scala Workshop Sources and Documentation](https://github.com/plipp/informatica-scala-2016):<br>
+   `git clone git@github.com:plipp/informatica-scala-2016.git` or <br>
+   `git clone https://github.com/plipp/informatica-scala-2016.git`
 
-2. [IntelliJ IDEA 2016.1 Help /Installing and Launching](https://www.jetbrains.com/help/idea/2016.1/installing-and-launching.html?search=install#d1790162e138)
+2. Install the [IntelliJ Community Edition](https://www.jetbrains.com/idea/download)<br>
+   See [Installation Help](https://www.jetbrains.com/help/idea/2016.1/installing-and-launching.html?search=install#d1790162e138) for further infos.<br>
    Please also install the featured Scala Plugin
 
-3. If you already have installed IntelliJ, but not the Scala Plugin: 
+3. If you already have installed IntelliJ, but not the Scala Plugin: <br>
    [Install it now!](http://stackoverflow.com/questions/26767463/intellij-14-create-import-a-scala-sbt-project)
    (This also should work for IntelliJ-2016)
    
-4. Import the scala workshop project into IntelliJ: `informatica-scala-2016/build.sbt`
+4. Import the scala workshop project into IntelliJ: `informatica-scala-2016/build.sbt`<br>
    ... can take some time as it downloads the whole internet ...
 
-5. Expected Result: Worksheets (*.sc) and tests can directly be run in IntelliJ
-
-6. TODO Getting Started with Scalatron ...
+5. Check, whether all works fine:
+    - open the worksheet `./src/main/worksheets/01_01_variables.sc` in IntelliJ
+    - click `Setup Scala SDK` + `Create...`+ `Download` (scala version should be >= 2.11.8) ... takes a while ...
+    - click the green button (Run) in the worksheet editor ... takes a while as IntelliJ first compiles ...
+    <br>...<br>
+    In case of success you should see the output of the scala code in the right pane of the worksheet editor.
 
 #### Troubleshooting
 
@@ -82,7 +86,6 @@ We walk through the basics of Scala by
 The guided tour can be found in the documentation directory [tutorial](./docs/tutorial/01-GettingStarted.md)
 
 
-
 IV. Help for Self-Help
 ------------------------------
 
@@ -104,7 +107,8 @@ IV. Help for Self-Help
 
 
 - REPL (=Read Evaluate Print Loop): *$>sbt console*
-- IntelliJ-Worksheets
+- IntelliJ-Worksheets:<br>
+  You may want to play in the [Playground Worksheet of this Project](./src/main/worksheets/playground.sc)
 
 
 V. Next Steps in Scala
@@ -122,19 +126,24 @@ V. Next Steps in Scala
 - Leading Authority: Martin Odersky, quite theoretical: [Programming in Scala (2013)](http://www.artima.com/shop/programming_in_scala_2ed), [free Online-Version (2008)](http://www.artima.com/pins1ed/)
 
 ### MOOC
-- [Functional Programming Principles in Scala](https://www.coursera.org/course/progfun)
-- [Functional Programming in Scala Specialization](https://www.coursera.org/specializations/scala)
+- Courseras [Functional Programming Principles in Scala](https://www.coursera.org/course/progfun), <br>
+  which is part of the [Functional Programming in Scala Specialization](https://www.coursera.org/specializations/scala)
+
 
 ### Playground
 - [Scala Koans](http://scala-exercises.47deg.com/)
 - [S-99: Ninety-Nine Scala Problems](http://aperiodic.net/phil/scala/s-99/)
 
+X. Good to Know
+---------------
 
-X. TODO
+- This documentation is written in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Basic Git](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
+
+
+XXX. TODO
 ------------------
 - Minimize dev-Gameboard
-
-- Rename 'ControlFunction' to 'Bot' ??? No - because of all the documentation...
 
 - Do we need info about
     - markdown --> link
