@@ -140,12 +140,9 @@ X. Good to Know
 - This documentation is written in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [Basic Git](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
+- TODO: What else???
 
 XXX. TODO
 ------------------
 - Minimize dev-Gameboard
 
-- Do we need info about
-    - markdown --> link
-    - git --> Tutoriallink
-    - what else???
