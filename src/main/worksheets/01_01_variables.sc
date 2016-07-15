@@ -1,8 +1,9 @@
 val s1 = "sample"+"for"+"string"+"concatenation"
-// TODO Does not compile: s1 = "another val"
+// TODO Does not compile???
+// s1 = "another val"
 
 val s4 = "I do not need a semicolon";
-val s5 = "But  do"; val s6 = 5+3
+val s5 = "But here I do"; val s6 = 5+3
 val s7: String = "With Type Declaration"
 
 var s2 = "Starter" + s1
