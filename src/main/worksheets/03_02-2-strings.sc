@@ -5,14 +5,14 @@ val s: String = "hello"
 s.substring(0,s.length-1)
 
 val sEmpty = ""
-// What happens here? TODO
+// TODO What happens here???
 // sEmpty.substring(0, sEmpty.length-1)
 // ------------------ Exercise
 
 // b) the Scala-Way
 s.dropRight(1)
-// What happens here? TODO
-//sEmpty.dropRight(1)
+// TODO What happens here???
+// sEmpty.dropRight(1)
 
 // -------- EXERCISES
 

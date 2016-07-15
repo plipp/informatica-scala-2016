@@ -7,6 +7,8 @@ class ControlFunction() {
 
 val controlFunction = new ControlFunction()
 controlFunction.respond("input")
+controlFunction.respond("input")
+controlFunction.respond("input")
 
 // EXERCISE 02
 // a) Change the respond method so that it returns

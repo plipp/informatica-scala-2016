@@ -6,10 +6,10 @@ s"$anInt"
 
 val asInt = "235".toInt
 
-// TODO: Was ist, wenn wir keine Zahl haben?
+// TODO: What happens, if the String is not a number???
 // "aber".toInt
 
-// TODO: oder wenn ein String ein Double und kein Int ist?
+// TODO: or if the String is a Double???
 // val asInt2 = "234.5".toInt
 
 // ----------------- operations on strings
@@ -23,7 +23,8 @@ aString.length
 val tokens: Array[String] = aString.split(' ')
 tokens(0)
 tokens(1)
-// TODO Crash : tokens(10)
+// TODO What happens???
+// tokens(10)
 
 tokens(1)="hello"
 tokens

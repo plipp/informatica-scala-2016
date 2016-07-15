@@ -1,11 +1,11 @@
 val a = 1
 val b = 3
 
-var c = 0
+var sideEffectMax = 0
 
 // the Java-Way with side-effects
-if (a>b) c=a else c=b
-c
+if (a>b) sideEffectMax=a else sideEffectMax=b
+sideEffectMax
 
 // the scala way without side-effects
 // resembles Java: a>b? a: b
