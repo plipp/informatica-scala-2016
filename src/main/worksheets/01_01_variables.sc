@@ -10,7 +10,7 @@ s2 = "new"
 s2 += "value"
 s2
 
-val s3 = s"Starter $s1" // Scala String Substitution
+var s3 = s"Starter $s1" // Scala String Substitution
 // EXERCISE 01
 // Make the following codeline running
-// s3 = "new"
+s3 = "new"

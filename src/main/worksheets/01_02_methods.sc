@@ -1,4 +1,4 @@
-def respond(input: String) = "Status(text=Hello)"
+def respond(input: String) = s"Status(text=Hello $input)"
 respond("World")
 
 def respondFullSignature(input: String): String = "Status(text=Hello)"
@@ -20,9 +20,10 @@ def respondDoNotForgetEquals(input: String) {
   val i = 55*2
   "Status(text="+i+")"
 }
-// TODO respondDoNotForgetEquals("World")
+// TODO What does this return?
+// respondDoNotForgetEquals("World")
 
 // EXERCISE 02
 // Change the respond method, so that
-//      respond("World")
+respond("World")
 // returns "Status(text=Hello World)"
