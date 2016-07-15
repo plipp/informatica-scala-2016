@@ -17,3 +17,4 @@ controlFunction.respond("input")
 println(controlFunction)
 //    returns the values of the controlFunctions members
 //    e.g. {name:'Scala', counter:5}
+//    Hint: toString (see http://docs.scala-lang.org/tutorials/tour/classes.html)
