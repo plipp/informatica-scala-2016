@@ -1,21 +1,21 @@
 # More Scala Concepts
 
 Before we continue developing the bot, it's time to introduce a concept of professional software development:
+
 - (automated) unit testing
 
-We use ScalaTest to write unit-tests and by the way learn more about
-- how to secure refactor the Bot-Class
+We use ScalaTest to write unit-tests and learn how to safely refactor the Bot-Class
 
 
 ## Instructions (Group Exercise)
 
-1. Check the code of the BotTest, run it:
-    - [Bot test](../../src/test/scala/concepts/TODOTest.scala)
+1. Check the code of the BotTest
+    - [Bot test](../../src/test/scala/BotTest05.scala)<br>
+    and run it either in IntelliJ or on command line:
     - `sbt ~test`
-2. Refactor your Bot code:
-    - starting point: [Bot.scala without maps](snippets/05-Bot-Before-Refactoring.scala)
-      Copy its code into the actual [Bot.scala file](../../src/main/scala/Bot.scala)
-    - Change your initial implementation of [the ControlFunction#respond-method](../../src/main/scala/Bot.scala) (see also [Instructions](./03-Understand-ControlFunction-Input.md)),
+2. Refactor your Bot code to use a map for the server input parameter:
+    - starting point: Either your own code after Lecture 04 or alternatively<br>
+      [Bot.scala without maps](snippets/05-Bot-Before-Refactoring.scala): You may copy it to [the actual Bot.scala file](../../src/main/scala/Bot.scala)
+    - Change your initial implementation of [the ControlFunction#respond-method](../../src/main/scala/Bot.scala),
       so that it puts all parameters in a dictionary/map and fetches their values from there
-      
-[Go on](https://github.com/plipp/scalatron/blob/master/Scalatron/doc/markdown/Scalatron%20Tutorial.md#bot-5-creating-a-command-parser-function)
+    - During your refactoring and when finished, check, that the tests still run.
