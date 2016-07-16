@@ -15,11 +15,12 @@ Too fix this, we will extract the parsing into its own method.
     - starting point: Either your own code after lecture 05 or alternatively<br>
       [Bot.scala after lecture 05](snippets/06-Bot-Before-Refactoring.scala): You may copy it to [the actual Bot.scala file](../../src/main/scala/Bot.scala)
       
-    1. Change your initial implementation of [the ControlFunction#respond-method](../../src/main/scala/Bot.scala),
-       so that it has the following structure after the refactoring:
+    - Change your initial implementation of [the ControlFunction#respond-method](../../src/main/scala/Bot.scala),
+      so that it has the following structure after the refactoring:<br>
+      (Don't forget to check, that the tests still run, and when finished, let your bot run through the arena.)
 
-```scala           
-  
+```scala
+
     class ControlFunction {
       def respond(input: String) = {
         val (opCode: String, paramMap: Map[String, String]) = parse(input)
@@ -35,5 +36,4 @@ Too fix this, we will extract the parsing into its own method.
         (opCode, paramMap)
       }
     }  
-```                    
-    During your refactoring and when finished, check, that the tests still run and when finished, let your bot run through the arena.
+```                  
