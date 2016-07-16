@@ -1,4 +1,4 @@
-// Tutorial Bot #1: Hello World
+// Tutorial Bot Class
 
 class ControlFunction {
 

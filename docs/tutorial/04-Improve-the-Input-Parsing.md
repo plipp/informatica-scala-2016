@@ -30,5 +30,4 @@ A convenient way for the realization would be to store the parameters in a Dicti
     - [arrays and map/flatMap](../../src/main/worksheets/04_04-arrays-and-map.sc)
 
 2. Improve your Bot code:
-    - Change your initial implementation of [the ControlFunction#respond-method](../../src/main/scala/Bot.scala) (see also [Instructions](./03-Understand-ControlFunction-Input.md)),
-      so that it puts all parameters in a dictionary/map and fetches their values from there
+    Let's do this in the next lecture [05](05-Testing-and-Refactoring.md)
