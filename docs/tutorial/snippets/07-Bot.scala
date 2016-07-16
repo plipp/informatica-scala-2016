@@ -17,10 +17,9 @@ class ControlFunction {
     val opCode: String = tokens(0)
 
     val params: Array[String] = tokens(1).dropRight(1).split(',')
-    def kvSplit (param:String) = param.split('=')
     val paramMap: Map[String, String] =
       params
-        .map(kvSplit)
+        .map(param => param.split('='))
         .map(kv => (kv(0), kv(1))).toMap
 
     (opCode, paramMap)
