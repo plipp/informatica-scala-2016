@@ -21,6 +21,8 @@ val cmd = try {
     "UNKNOWN"
 }
 
+println ("Let's see what is going on ...")
+
 // ----------- throw an exception
 // TODO check, what happens
 // throw new IllegalStateException("Something is wrong here")
