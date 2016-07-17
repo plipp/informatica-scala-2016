@@ -11,7 +11,7 @@ class BotTest05 extends FunSuite {
     val serverInput: String = "React(generation=0,time=0,view=_________,energy=100)"
 
     val reply: String = bot.respond(serverInput)
-    reply.should(be("Move(direction=0:-1)|Status(text=100)"))
+    reply.should(be("Move(direction=-1:-1)|Status(text=100)"))
   }
 
   test("""[ON Goodbye] The bot should reply with "", if the Operation Code is 'GoodBye' and not 'React'""") {

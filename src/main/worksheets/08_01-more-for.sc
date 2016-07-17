@@ -25,3 +25,7 @@ def at(x: Int, y:Int) = if ((x+y)%2==0) 'W' else '_'
 
 // find all (x,y)-Tuples for x <- -1 to 1, y <- -1 to 1, where at(x,y)!='W'
 // expected result: Vector((-1,0), (0,-1), (0,1), (1,0))
+for {
+  x <- -1 to 1
+  y <- -1 to 1 if at(x,y)!='W'
+} yield (x,y)
