@@ -4,7 +4,7 @@ class ControlFunction {
   //
   // Callback function, which is always called, when anything in the world around changes.
   def respond(input: String) = {
-    val (opCode: String, paramMap: Map[String, String]) = parse(input)
+    val (opCode: String, paramMap: Map[String, String]) = parse("!!! wrong wrong Input !!!")
 
     if (opCode=="React") /* e.g. React(generation=0,time=0,view=__W_W_W__,energy=100) */ {
       val energy = paramMap("energy")
@@ -25,6 +25,11 @@ class ControlFunction {
     (opCode, paramMap)
   }
 }
+
+// ----------------------------------------------------------------------------------
+// INTERNALS (you don't need to touch this during the workshop!)
+//
+// Entry Point for the Server
 
 class ControlFunctionFactory {
   def create = new ControlFunction().respond _

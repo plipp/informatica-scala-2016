@@ -17,7 +17,7 @@ val invalidOpCode = invalidTokens(0)
 val cmd = try {
   invalidTokens(1)
 } catch {
-  case e: ArrayIndexOutOfBoundsException => println(s"Internal error: $e")
+  case e: ArrayIndexOutOfBoundsException => e.printStackTrace()
     "UNKNOWN"
 }
 
@@ -26,5 +26,5 @@ val cmd = try {
 // throw new IllegalStateException("Something is wrong here")
 
 // EXERCISE X1-1
-// catch the exception of the following statement and convert into an IllegalStateException
+// catch the exception of the following statement and 'convert' into an IllegalStateException
 invalidTokens(1)
