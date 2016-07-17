@@ -28,15 +28,9 @@ val params1 = mayBeParams.getOrElse("")
 // ------------ EXERCISE X1-2
 
 // a)
-// 'catch' the exception of the following statement and convert into an IllegalStateException
-// Solve with Try-Failure
-// TODO decomment the following line
-// invalidTokens(1)
-
-// b)
 val i = Random.nextInt()%2
 
 // the following line can fail with a java.lang.ArithmeticException: / by zero
 // In case of an exception, return -1 as result.
 // Use Try - getOrElse
-val result = 100/i
+val result = Try{100/i}.getOrElse(-1)

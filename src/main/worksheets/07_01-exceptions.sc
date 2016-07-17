@@ -21,10 +21,17 @@ val cmd = try {
     "UNKNOWN"
 }
 
+println ("Go on ...")
+
 // ----------- throw an exception
 // TODO check, what happens
 // throw new IllegalStateException("Something is wrong here")
 
 // EXERCISE X1-1
 // catch the exception of the following statement and 'convert' into an IllegalStateException
-invalidTokens(1)
+try {
+  invalidTokens(1)
+} catch {
+  case e: ArrayIndexOutOfBoundsException => e.printStackTrace()
+    throw new IllegalStateException("less than 2 tokens found")
+}
