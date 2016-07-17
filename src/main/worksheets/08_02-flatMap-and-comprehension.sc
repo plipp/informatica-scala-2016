@@ -23,3 +23,10 @@ l3.map(t3 => (0,0,t3))
 //for {t1 <- l1
 //     t2 <- l2
 //     t3 <- l3} yield (t1,t2,t3)
+
+// TODO EXERCISE 2
+// find all (x,y)-Tuples for x <- -1 to 1, y <- -1 to 1, where at(x,y)!='W'
+// same as 08_01-more-for.sc: EXERCISE 1, but now with flatMap,map,filter
+//
+// expected result: Vector((-1,0), (0,-1), (0,1), (1,0))
+

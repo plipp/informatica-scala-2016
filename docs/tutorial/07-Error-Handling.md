@@ -8,7 +8,7 @@ This lecture shows, how Exceptions/Errors can be handled.
 1. Damage the Bot, e.g. set the server-input for parsing to "" and check what happens in the arena.
    
    Starting point: Either your own code after lecture 06 or alternatively<br>
-   [07-Bot-with-Damage.scala](snippets/07-Bot-with-Damage.scala): You may copy it to [the actual Bot.scala file](../../src/main/scala/Bot.scala)
+   [07-Bot-with-Damage.scala](snippets/07-Bot-with-Damage.scala): You may want to copy it to [the actual Bot.scala file](../../src/main/scala/Bot.scala)
 
    Check both the board and the server logs: What happens?
    

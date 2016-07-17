@@ -42,7 +42,7 @@ Here a description, how both options work, in more detail:
    `git clone https://github.com/plipp/informatica-scala-2016.git`
 
 2. Install the [IntelliJ Community Edition](https://www.jetbrains.com/idea/download)<br>
-   See [Installation Help](https://www.jetbrains.com/help/idea/2016.1/installing-and-launching.html?search=install#d1790162e138) for further infos.<br>
+   See [Installation Help](https://www.jetbrains.com/help/idea/2016.2/installing-and-launching.html?search=install#d1790162e138) for further infos.<br>
    Please also install the featured Scala Plugin
 
 3. If you already have installed IntelliJ, but not the Scala Plugin: <br>
@@ -88,7 +88,7 @@ Here a description, how both options work, in more detail:
 
 ### Further Links about IntelliJ for Scala
 
-- https://www.jetbrains.com/help/idea/2016.1/scala.html
+- https://www.jetbrains.com/help/idea/2016.2/scala.html
 
 III. This workshop
 ------------------
@@ -153,10 +153,4 @@ X. Good to Know
 
 - This documentation is written in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [Basic Git](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
-
-- TODO: What else???
-
-XXX. TODO
-------------------
-- Minimize dev-Gameboard
 
