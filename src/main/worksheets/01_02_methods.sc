@@ -20,7 +20,7 @@ def respondDoNotForgetEquals(input: String) {
   val i = 55*2
   "Status(text="+i+")"
 }
-// TODO: What das the following line return???
+// TODO: What does the following line return???
 // respondDoNotForgetEquals("World")
 
 // EXERCISE 01 - 2
