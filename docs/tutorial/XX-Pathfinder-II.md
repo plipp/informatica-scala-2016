@@ -1,8 +1,8 @@
 # Make the Pathfinder more clever
 
 so that it e.g.
-- does get out of a U-wallv
-- does not collide with bad beasts, but eats good food...
+- gets out of a U-wall
+- does not collide with bad beasts, but instead eats good food...
 
 Learn more Scala concepts like
 - pattern matching
