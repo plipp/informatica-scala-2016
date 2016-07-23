@@ -34,6 +34,7 @@ Here a description, how both options work, in more detail:
 
 ### Option 1 - the hard way
 0. Install
+    - [Git](https://git-scm.com/downloads)
     - [Java 8 (JDK!)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
     - [Scala Simple Build Tool (SBT)](http://www.scala-sbt.org/download.html)
  
@@ -69,13 +70,13 @@ Here a description, how both options work, in more detail:
         -Xmx1750m
     ```
 
-### Option 2 - the easy(ier) way
+### Option 2 - the (hopefully) easy way
 
 1. Install Virtualbox
 
-2. Import the Virtualbox Appliance for the Informatica-Scala-Workshop [XUbuntu](TODO) via 'File->Import Appliance' 
+2. Import the Virtualbox Appliance [X-Ubuntu-IF.ova](TODO) via 'File->Import Appliance' 
 
-3. Start the `XUbuntu` VM (informatica/informatica)
+3. Start the `X-Ubuntu-IF` VM (informatica/informatica)
     - Start IntelliJ
     - (git) pull fresh Workshop Sources in IntelliJ or from terminal (IntelliJ has one as well!:<br>
        `cd /home/informatica/informatica/scala-workshop/informatica-scala-2016 && git pull`
@@ -84,7 +85,21 @@ Here a description, how both options work, in more detail:
     - open the worksheet `./src/main/worksheets/01_01_variables.sc` in IntelliJ
     - click the green button (Run) in the worksheet editor ... takes a while as IntelliJ first compiles ...
     <br>...<br>
-    In case of success you should see the output of the scala code in the right pane of the worksheet editor.    
+    In case of success you should see the output of the scala code in the right pane of the worksheet editor.
+    
+#### Troubleshooting
+
+1. The VM does not start at all
+
+- In case of `VT-x is disabled in the BIOS for both all CPU modes (VERR_VMX_MSR_ALL_VMX_DISABLED)` first check in the 
+  settings of the VM `X-Ubuntu-IF` ([show me](./docs/env-setup/VBox/VM-Settings.png)), that the operation system is Ubuntu64 (not Ubuntu32!) and retry.
+  
+  If this did not help, take a look into stackoverflow (http://stackoverflow.com/questions/33304393/vt-x-is-disabled-in-the-bios-for-both-all-cpu-modes-verr-vmx-msr-all-vmx-disabl)
+
+2. Infoboxes popping up during VM-Start and complaining `Failed to connect to Virtualbox Kernel...` can be ignored
+
+3. An update of the Virtualbox Guest Additions should not be necessary.
+ 
 
 ### Further Links about IntelliJ for Scala
 
@@ -109,8 +124,6 @@ IV. Help for Self-Help
 - [Scalatron Game Protocol](https://github.com/plipp/scalatron/blob/master/Scalatron/doc/markdown/Scalatron%20Protocol.md)
 
 ### Scala
-
-- [Scala CheatSheet by Scalatron](TODO)
 
 - [Scala CheatSheet Typesafe with GOOD-BAD](http://docs.scala-lang.org/cheatsheets/?_ga=1.39644259.1946458768.1438599324)
 - [Scala CheatSheet Coursera](https://github.com/lampepfl/progfun-wiki/blob/gh-pages/CheatSheet.md)
@@ -137,20 +150,20 @@ V. Next Steps in Scala
 - Very Fast way (2012): [Scala for the Impatient](http://www.horstmann.com/scala/index.html)
 - Comprehensive Guide: [The Neophyte's Guide to Scala](http://danielwestheide.com/scala/neophytes.html)
 - Cookbook: [Online-Site for *Scala Cookbook*](http://alvinalexander.com/scala)
-- Leading Authority: Martin Odersky, quite theoretical: [Programming in Scala (2013)](http://www.artima.com/shop/programming_in_scala_2ed), [free Online-Version (2008)](http://www.artima.com/pins1ed/)
+- Leading Authority: Martin Odersky, quite theoretical: [Programming in Scala (2016)](http://www.artima.com/shop/programming_in_scala_3ed), [free Online-Version (2008)](http://www.artima.com/pins1ed/)
 
 ### MOOC
 - Courseras [Functional Programming Principles in Scala](https://www.coursera.org/course/progfun), <br>
   which is part of the [Functional Programming in Scala Specialization](https://www.coursera.org/specializations/scala)
 
 
-### Playground
-- [Scala Koans](http://scala-exercises.47deg.com/)
+### Playful Exercises
+- [Scala Exercises - STD - CATS ...](https://www.scala-exercises.org/)
 - [S-99: Ninety-Nine Scala Problems](http://aperiodic.net/phil/scala/s-99/)
 
 X. Good to Know
 ---------------
 
+- [Basic Git](https://git-scm.com/book/en/v2) 
 - This documentation is written in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- [Basic Git](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
