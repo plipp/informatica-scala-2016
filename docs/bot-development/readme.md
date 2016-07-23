@@ -1,4 +1,4 @@
-# [Scalatron](https://github.com/scalatron/scalatron) Bot Development
+# [Scalatron](http://scalatron.github.io/) Bot Development
 
 ## Overview
 
