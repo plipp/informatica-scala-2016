@@ -1,5 +1,14 @@
 # [Scalatron](https://github.com/scalatron/scalatron) Bot Development
 
+## Overview
+
+The Scalatron Server picks up bot-plugin-jars.
+The Bot, we will develop in this workshop, is expected as `bots/user01/ScalatronBot.jar`.
+
+![alt text](Server-Plugin-Overview.png "Server - Plugin Overview")
+
+We will use `sbt` to generate the `.jar` file from the `.scala`-source(s).
+
 ## Preconditions
 
 Installed Scala Build Tool [sbt](http://www.scala-sbt.org/)

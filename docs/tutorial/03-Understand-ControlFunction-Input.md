@@ -1,8 +1,11 @@
 # Understand Control Function Input
 
 ## Motivation
-`respond(input: String)` gets input-strings like `"React(generation=0,time=0,view=__W_W_W__,energy=100)", "Goodbye(energy=0)"...`
+`respond(input: String)` gets input-strings which represent operation codes with details, e.g. 
+`"React(generation=0,time=0,view=__W_W_W__,energy=100)", "Goodbye(energy=0)"...`
   
+![alt text](./images/Server-Plugin-Communication.png "Server - Plugin Communication")
+
 see [Scalatron Game Protocol](https://github.com/plipp/scalatron/blob/master/Scalatron/doc/markdown/Scalatron%20Protocol.md#control-function-protocol)
 for further details.
 

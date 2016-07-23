@@ -33,6 +33,9 @@ The IDE must be IntelliJ (not e.g. ScalaIDE, Eclipse...), because the worksheets
 Here a description, how both options work, in more detail:
 
 ### Option 1 - the hard way
+
+... but if you take it, you have everything needed for your own development steps on your own computer ...
+
 0. Install
     - [Git](https://git-scm.com/downloads)
     - [Java 8 (JDK!)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
@@ -70,13 +73,16 @@ Here a description, how both options work, in more detail:
         -Xmx1750m
     ```
 
-### Option 2 - the (hopefully) easy way
+### Option 2 - the (hopefully) easier way
 
-1. Install Virtualbox
+... running the development environment in a virtual machine ...
 
-2. Import the Virtualbox Appliance [X-Ubuntu-IF.ova](TODO) via 'File->Import Appliance' 
+1. Install and start Virtualbox
 
-3. Start the `X-Ubuntu-IF` VM (informatica/informatica)
+2. Download the Virtualbox Appliance [X-Ubuntu-IF.ova](https://drive.google.com/open?id=0B0nEF6hODfM1Rk42U2JDazNKSG8) 
+   and import it via 'File->Import Appliance' 
+
+3. Start the `X-Ubuntu-IF` VM (informatica/informatica)*
     - Start IntelliJ
     - (git) pull fresh Workshop Sources in IntelliJ or from terminal (IntelliJ has one as well!:<br>
        `cd /home/informatica/informatica/scala-workshop/informatica-scala-2016 && git pull`
@@ -87,7 +93,7 @@ Here a description, how both options work, in more detail:
     <br>...<br>
     In case of success you should see the output of the scala code in the right pane of the worksheet editor.
     
-#### Troubleshooting
+#### *Troubleshooting
 
 1. The VM does not start at all
 
