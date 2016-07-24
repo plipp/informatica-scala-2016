@@ -15,7 +15,7 @@ project/plugins/project/
 ## File-based project format:
 *.iws
 
-## Plugin-specific files:
+## Plugin-specific files
 
 # IntelliJ
 /out/
