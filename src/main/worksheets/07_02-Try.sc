@@ -23,7 +23,7 @@ val cmd = try {
 val mayBeParams = Try{invalidTokens(1)}
 mayBeParams
 
-val params1 = mayBeParams.getOrElse("")
+val params1 = mayBeParams.getOrElse("UNKNOWN")
 
 // ------------ EXERCISE X1-2
 
