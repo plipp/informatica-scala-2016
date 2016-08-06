@@ -19,10 +19,12 @@ val cmd = try {
     "UNKNOWN"
 }
 
-// ... the Scala way, a quasi Monad (flatMap => enables: for-comprehension)
+// ... the Scala way
 val mayBeParams = Try{invalidTokens(1)}
 mayBeParams
 
+// TODO what happens
+// mayBeParams.get
 val params1 = mayBeParams.getOrElse("UNKNOWN")
 
 // ------------ EXERCISE X1-2
