@@ -2,6 +2,9 @@
 val react = "React(generation=0,time=0,view=__W_W_W__,energy=100)"
 val params: Array[String] = react.split('(')(1).dropRight(1).split(',')
 
+// just to see more
+params.toList
+
 // iterate over the params and get (key,value)-tuples - the imperative way
 
 // a) for-loop: with side-effect => an anti-pattern in scala
@@ -28,15 +31,10 @@ params.foreach(s => print (s"|$s|"))
 // ----------------- EXERCISE 04 - 2
 val keyValueTuples: Array[(String,String)] = Array.ofDim(params.length)
 var i = 0
-// - collect the kv-array-elements in a foreach-expression,
+// - collect the kv-array-elements from 'params' in a foreach-expression,
 //   using i as counter + update-function of Array
 // - when finished: decomment the following line and check your result
+//
+// Hint:
+// This solution is quite similar to that one in the for-expression: for (i<-0 until params.length)
 // val paramMap: Map[String, String] = keyValueTuples.toMap
-
-// Bonus-Exercise
-var keyValueTuples2: Array[(String, String)] = Array.empty
-// - collect the kv-array-elements in a foreach-expression,
-//   using  :+ (==copy and append) function of Array
-//   (see http://www.scala-lang.org/api/current/#scala.Array for further help)
-// - when finished: decomment the following line and check your result
-// val paramMap2: Map[String, String] = keyValueTuples2.toMap
