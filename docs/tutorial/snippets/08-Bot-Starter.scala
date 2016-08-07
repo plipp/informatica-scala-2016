@@ -43,7 +43,7 @@ class PathFinder (view: MyView) {
     *
     * @return the relative coordinates of the free cell, e.g. (-1,1)
     */
-  def findPath() = ???
+  def findPath():(Int, Int) = ???
 
 }
 
