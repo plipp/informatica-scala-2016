@@ -26,8 +26,10 @@ s.dropRight(1)
 "Hello".dropRight(3) // => 'He'
 "Hello".take(2) // => 'He'
 
+// 2 extract the energy value (99) as integer from the following token1-String
+val token1="energy=99)" // --> 99
 
-// 2. implement 'respond': It should return
+// 3. implement 'respond': It should return
 // - "Status(text=onReact)" if the input state 'React'
 // - "Status(text=${energy-2})" as string if the input state is 'Goodbye'
 // - else: "Status(text=?)"
@@ -37,3 +39,8 @@ def respond(input:String) = "Status(text=?)"
 respond("nothing") // expected: Status(text=?)
 respond("React(...") // expected: Status(text=onReact)"
 respond("Goodbye(energy=99)") // expected: Status(text=97)
+
+// 4. Instead of an if-statement a match can be used, which is ressembles a
+//    switch in java/js.
+//    See http://docs.scala-lang.org/tutorials/tour/pattern-matching.html for how it works.
+//    Implement 3 with pattern-matching.
