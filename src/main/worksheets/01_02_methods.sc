@@ -1,6 +1,6 @@
-def respond(input: String) = "Status(text=Hello)"
+def respond(input: String) = "Status(text=Hello " + input + ")"
 respond("World")
-
+//
 def respondFullSignature(input: String): String = "Status(text=Hello)"
 respondFullSignature("World")
 
@@ -21,9 +21,11 @@ def respondDoNotForgetEquals(input: String) {
   "Status(text="+i+")"
 }
 // TODO: What does the following line return???
-// respondDoNotForgetEquals("World")
+ respondDoNotForgetEquals("World")
 
 // EXERCISE 01 - 2
 // Change the respond method, so that
-//      respond("World")
+      respond("World")
 // returns "Status(text=Hello World)"
+
+var a = 1

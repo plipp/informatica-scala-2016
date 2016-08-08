@@ -1,5 +1,5 @@
 // ----------------- convert vice-versa
-val anInt = 24345
+val anInt: Int = 24345
 
 anInt.toString
 s"$anInt"
@@ -24,7 +24,7 @@ val tokens: Array[String] = aString.split(' ')
 tokens(0)
 tokens(1)
 // TODO What happens???
-// tokens(10)
+//tokens(10)
 
 tokens(1)="hello"
 tokens
@@ -39,8 +39,20 @@ val refEqualsOp = 234.toString eq "234"
 // - "Status(text=onGoodbye)" if the input state is 'Goodbye'
 // - else "Status(text=?)"
 // try to solve with: 'split' and toXXX
-def respond(input:String) = "Status(text=XXX)"
+def respond(input:String) = {
+  val tokens = input.split("\\(")
+  val event = if (tokens(0)=="React") {
+    "onReact"
+  } else if (tokens(0)=="Goodbye"){
+    "onGoodbye"
+  } else {
+    "?"
+  }
+  s"Status(text=$event)"
+}
 
 respond("nothing") // expected: Status(text=?)
 respond("React(...") // expected: Status(text=onReact)
 respond("Goodbye(energy=99)") // expected: Status(text=onGoodbye)
+
+
