@@ -29,4 +29,9 @@ println ("Let's see what is going on ...")
 
 // EXERCISE X1-1
 // catch the exception of the following statement and 'convert' into an IllegalStateException
-invalidTokens(1)
+try {
+  invalidTokens(1)
+} catch {
+  case e: ArrayIndexOutOfBoundsException => // e.printStackTrace()
+    throw new IllegalStateException("NEW")
+}

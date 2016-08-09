@@ -1,40 +1,52 @@
-// Starting Point
-val react = "React(generation=0,time=0,view=__W_W_W__,energy=100)"
-val params: Array[String] = react.split('(')(1).dropRight(1).split(',')
+// loops in scala
 
-// just to see more
-params.toList
 
-// iterate over the params and get (key,value)-tuples - the imperative way
+val a = List(1,2,3,4)
 
-// a) for-loop: with side-effect => an anti-pattern in scala
-val keyValueTuples1: Array[(String,String)] = Array.ofDim(params.length)
-for (i<-0 until params.length) {
-  val kv: Array[String] = params(i).split('=')
-  keyValueTuples1.update(i,(kv(0),kv(1))) // Note: Arrays can be updated ==> mutable!
-}
-val paramMap1: Map[String, String] = keyValueTuples1.toMap
+// ----------------------------------------------------------------------
+// foreach() with sideeffects
+// (Int) => ???
+def printInt(i:Int) = print(i)
+a.foreach(printInt) // pass a method
 
-// b) the 1/2 Java way - with side-effect => an anti-pattern in scala
+val printInt2 = (i: Int) => print(i) // a lambda-expression
+a.foreach(printInt2) // pass a lambda-expression
 
-// ---- short trip: lambdas
-def aMethodWith1StringParam (s: String) = print (s"|$s|")
-params.foreach(aMethodWith1StringParam)
+a.foreach((i:Int)=>print(i)) // use the lambda-expression directly - long form
 
-// ... actually 'aMethodWith1StringParam' is scala-internally converted to a lambda expression
-val aLambdaExpression: (String) => Unit = (s:String) => print (s"|$s|")
-params.foreach(aLambdaExpression)
+a.foreach(i => print(i)) // use the lambda-expression directly - short form
+a.foreach(print(_)) // use _ as parameter
 
-// ... or even shorter
-params.foreach(s => print (s"|$s|"))
+// ----------------------------------------------------------------------
+// map+flatMap without side effects
+val duplicate = a.map(i => i*2)
 
-// ----------------- EXERCISE 04 - 2
-val keyValueTuples: Array[(String,String)] = Array.ofDim(params.length)
-var i = 0
-// - collect the kv-array-elements from 'params' in a foreach-expression,
-//   using i as counter + update-function of Array
-// - when finished: decomment the following line and check your result
+// `map`translates to
 //
-// Hint:
-// This solution is quite similar to that one in the for-expression: for (i<-0 until params.length)
-// val paramMap: Map[String, String] = keyValueTuples.toMap
+// ArrayList result = new ArrayList()
+// for (i;i<a.length;i++) {
+//     int value=a[i]*2;
+//     result.add(a[i]);
+// }
+// return result;
+
+
+// (Int) => List[U]
+val duplicate2 = a.flatMap(i => List(i*2))
+duplicate(2)
+
+val threePlus = a.map(i => i+3)
+val threePlus2 = a.flatMap(i => List(i+3))
+
+// ----------------------------------------------------------------------
+// filter without side effects
+a.filter(i => i%3==0)
+
+// `map`translates to
+//
+// ArrayList result = new ArrayList()
+// for (i;i<a.length;i++) {
+//     if (a[i]%3==0) {
+//         result.add(a[i]);
+//     }
+// }

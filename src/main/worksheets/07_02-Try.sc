@@ -23,14 +23,19 @@ val cmd = try {
 val mayBeParams = Try{invalidTokens(1)}
 mayBeParams
 
+
+val success = Try{1}
+success.get
 // TODO what happens
-// mayBeParams.get
-val params1 = mayBeParams.getOrElse("UNKNOWN")
+//mayBeParams.get
+val paramsAlternative1 = mayBeParams.getOrElse("UNKNOWN")
+val paramsAlternative2 = mayBeParams.recover{case t => print(t.getStackTrace); "UNKNOWN"}
 
-// ------------ EXERCISE X1-2
 
-val i = Random.nextInt()%2
-
+//
+//// ------------ EXERCISE X1-2
+//
+val i = 0 //Random.nextInt()%2
 // the following line can fail with a java.lang.ArithmeticException: / by zero
 // In case of an exception, return -1 as result.
 // Use Try - getOrElse
