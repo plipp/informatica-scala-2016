@@ -4,11 +4,16 @@ class ControlFunction {
 
   // The only door to the EXTERNAL world:
   //
-  // Callback function, which is always called, when anything in the world around changes.
+  // Callback function, which is always called, when anything in the world around changes
   def respond(input: String) = {
-    val (opCode: String, paramMap: Map[String, String]) = parse(input)
+    val tokens: Array[String] = input.split('(')
+    if (tokens(0)=="React") /* e.g. React(generation=0,time=0,view=__W_W_W__,energy=100) */ {
+      val params: Array[String] = tokens(1).dropRight(1).split(',')
+      val paramMap = params
+        .map(_.split('='))
+        .map(a => (a(0), a(1)))
+        .toMap
 
-    if (opCode=="React") /* e.g. React(generation=0,time=0,view=__W_W_W__,energy=100) */ {
       val energy = paramMap("energy")
       val view = paramMap("view")
       val (x,y) = findPath(view)
@@ -65,7 +70,7 @@ class MyView (val view: String){
     */
   def at(x: Int, y:Int) = view.charAt(toIndex(x,y))
 
-  private def toIndex(x: Int, y: Int): Int = ???
+  private def toIndex(x: Int, y: Int): Int = (y+n)*size +(x+n)
 
   override def toString: String = {
     def toLines(rest:String): String =
