@@ -39,4 +39,5 @@ val i = 0 //Random.nextInt()%2
 // the following line can fail with a java.lang.ArithmeticException: / by zero
 // In case of an exception, return -1 as result.
 // Use Try - getOrElse
-val result = 100/i
+val result: Try[Int] = Try{100/i}
+result.getOrElse(-1)
