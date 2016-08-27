@@ -1,4 +1,4 @@
-scala-Workshop: Basics
+scala-Workshop: Basics [![GitHub Stats](https://img.shields.io/badge/github-stats-brightgreen.svg)](https://githubstats.com/plipp/informatica-scala-2016)
 ======================
 
 I. What is this all about?
